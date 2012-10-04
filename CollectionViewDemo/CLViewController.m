@@ -66,7 +66,7 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"didSelectItemAtIndexPath %d",indexPath.row);
+    NSLog(@"SelectItem %d",indexPath.row);
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didHighlightItemAtIndexPath:(NSIndexPath *)indexPath {

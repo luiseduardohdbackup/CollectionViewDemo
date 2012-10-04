@@ -22,8 +22,11 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    
-    layout.itemSize = CGSizeMake(80,80);
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad){
+        layout.itemSize = CGSizeMake(192,192);
+    }else{
+        layout.itemSize = CGSizeMake(80,80);
+    }
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     //layout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5);
     layout.minimumLineSpacing = 0.0;

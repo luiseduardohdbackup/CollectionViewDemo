@@ -23,7 +23,7 @@
 //        [self.contentView addSubview:self.label];;
         //self.contentView.layer.borderWidth = 1.0f;
         //self.contentView.layer.borderColor = [UIColor whiteColor].CGColor;
-        NSLog(@"frame.size.width %f",frame.size.width);
+        //NSLog(@"frame.size.width %f",frame.size.width);
         self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(5.0, 5.0, frame.size.width-10.0, frame.size.height-10.0)];
         [self.contentView addSubview:self.imageView];
     }
